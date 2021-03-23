@@ -1,0 +1,24 @@
+<updates>
+    <update>
+        <name>JSN Group Module</name>
+        <description></description>
+        <element>mod_hrz_jsn_group</element>
+        <type>module</type>
+        <version>0.0.9</version>
+        <client>0</client>
+        <infourl title="JSN Group Module" />
+        <downloads>
+            <downloadurl
+                type="full"
+                format="zip">
+                https://github.com/alve89/j_mod_hrz_jsn_group/archive/v0.0.9.zip
+            </downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Snoeren Development</maintainer>
+        <maintainerurl>https://github.com/alve89/</maintainerurl>
+        <targetplatform name="joomla" version="[34].[0123456789]" />
+    </update>
+</updates>
