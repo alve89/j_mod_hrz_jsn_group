@@ -42,6 +42,6 @@
 	    </fields>
     </config>
     <updateservers>
-  	<server type="extension" priority="1" name="mod_hrz_jsn_group">https://raw.githubusercontent.com/alve89/j_mod_hrz_jsn_group/master/mod_hrz_jsn_group.xml</server>
+  	<server type="extension" priority="1" name="mod_hrz_jsn_group">https://raw.githubusercontent.com/alve89/j_mod_hrz_jsn_group/master/updates.xml</server>
   	</updateservers>
 </extension>
