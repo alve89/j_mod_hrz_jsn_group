@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+    <name>JSN Group Grid</name>
+    <author>Stefan Herzog</author>
+    <creationDate>August 2020</creationDate>
+    <version>0.0.8</version>
+    <description>Modul zum Anzeigen mehrerer Benutzer einer Gruppe </description>
+    <files>
+        <filename>mod_hrz_jsn_group.xml</filename>
+        <filename module="mod_hrz_jsn_group">mod_hrz_jsn_group.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<folder>css</folder>
+    </files>
+    <config>
+	    <fields name="params">
+	    	<fieldset name="basic">
+			<field name="groupid" type="usergrouplist"
+				label="MOD_HRZ_JSN_GROUP_LABEL_CHOSEN_GROUP"
+			/>
+			<field name="maxElementsInRow" type="number"
+				   label="MOD_HRZ_JSN_GROUP_LABEL_MAXELEMENTSINROW"
+				   min="1"
+				   max="10"
+			/>
+			<field name="defaultContactAddress"
+				   type="text"
+				   default="/kontakt"
+				   required="true"
+				   label="MOD_HRZ_JSN_GROUP_LABEL_DEFAULTCONTACTADDRESS"
+			/>
+			<field name="parameterName"
+				   type="text"
+				   size="15"
+				   default="cfid"
+				   required="true"
+				   label="MOD_HRZ_JSN_GROUP_LABEL_PARAMETERNAME"
+			/>
+	    	</fieldset>
+	    </fields>
+    </config>
+    <updateservers>
+  	<server type="extension" priority="1" name="mod_hrz_jsn_group">TBF</server>
+  	</updateservers>
+</extension>
