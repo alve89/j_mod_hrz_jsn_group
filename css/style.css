@@ -13,7 +13,7 @@
 }
 
 .jsn_group_profile_overlay {
-	background-color: #f5f5f5;
+	background-color: #c42f40;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -42,28 +42,32 @@
 	height: 2px;
 	width: 0%;
 	margin: 15px auto;
-	background-color: black;
+	background-color: white;
 	transition: all 500ms ease-out;
 }
 
 .jsn_group_profile_name {
 	font-size: 1.0em;
 	margin-top: 25px;
+	color: white;
 }
 
 .jsn_group_profile_bereich {
 	font-size: 15px;
 	margin-top: 15px;
+	color: white;
 }
 
 .jsn_group_profile_contact {
 	margin-top: 10%;
 	text-align: center;
 	height: 50px;
+	color: white;
 }
 
 .jsn_group_profile_contact_icon a {
-	border: 1px solid currentColor;
+	border: 1px solid white; /*currentColor*/
+	color: white;
 	width: 50px;
 	height: 50px;
 	padding: 10px 5px;
@@ -77,6 +81,7 @@
 	
 }
 
+.jsn_group_profile_contact_icon_mail_desktop
 
 .jsn_group_single_profile_wrapper {
 	margin-bottom: 20px;
