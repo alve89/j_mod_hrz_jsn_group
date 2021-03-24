@@ -38,6 +38,22 @@
 				   required="true"
 				   label="MOD_HRZ_JSN_GROUP_LABEL_PARAMETERNAME"
 			/>
+			<field name="show_mail" 
+			       type="radio" default="0"
+			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_MAIL"
+			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_MAIL"
+			       class="btn-group btn-group-yesno">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_phone" 
+			       type="radio" default="0"
+			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_PHONE"
+			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_PHONE"
+			       class="btn-group btn-group-yesno">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
 	    	</fieldset>
 	    </fields>
     </config>
