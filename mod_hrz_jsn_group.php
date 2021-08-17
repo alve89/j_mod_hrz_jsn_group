@@ -17,4 +17,6 @@
 
 
 	// Render output
-	require JModuleHelper::getLayoutPath('mod_hrz_jsn_group');
+	//require JModuleHelper::getLayoutPath('mod_hrz_jsn_group');
+	$layout = $params->get('layout');
+	require(JModuleHelper::getLayoutPath('mod_hrz_jsn_group', $layout ));

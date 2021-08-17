@@ -1,4 +1,4 @@
-<?php 
+<?php
 // No direct access
 defined('_JEXEC') or die;
 
@@ -20,7 +20,7 @@ foreach($users as $user) {
 		}
 
 	}
-	
+
 	if(!empty($user->getValue('kontaktseite'))) {
 		// Kontaktseite IST definiert
 		if(!empty($user->getValue('convert_forms_contact_id')) && !empty($params->get('parameterName'))) {
@@ -44,9 +44,9 @@ foreach($users as $user) {
 !empty(parse_url($user->kontaktadresse)['query']) ? $user->kontaktadresse .= '&' : $user->kontaktadresse .= '?';
 
 $user->kontaktadresse .= 'uid='.$user->getValue('id');
-	
 
-	
+
+
 ?>
 <!--<div class="jsn_group_single_profile_wrapper" style="width: <?=100/$params->get('maxElementsInRow');?>%">-->
 <div class="jsn_group_single_profile_wrapper jsn_group_col_<?=count($users)>$params->get('maxElementsInRow') ? $params->get('maxElementsInRow') : count($users);?>">
@@ -54,31 +54,46 @@ $user->kontaktadresse .= 'uid='.$user->getValue('id');
 		<div class="jsn_group_profile_avatar jsn_group_profile">
 			<img src="/<?=$user->getValue('avatar');?>" />
 		</div>
-		<div class="jsn_group_profile_overlay">
-			<div class="jsn_group_profile_name jsn_group_profile">
+		<div class="jsn_group_profile_overlay" style="background-color: <?=$params->get('backgroundcolor');?>">
+			<div class="jsn_group_profile_name jsn_group_profile" style="color: <?=$params->get('fontcolor');?>">
 				<span><?=$user->getValue('firstname') . ' ' . $user->getValue('lastname');?></span>
 			</div>
-			<div class="jsn_group_profile_line"></div>
+			<div class="jsn_group_profile_line" style="background-color: <?=$params->get('fontcolor');?>"></div>
 			<div class="jsn_group_profile_bereich jsn_group_profile">
 				<?=$user->funktion;?>
 			</div>
 			<div class="jsn_group_profile_contact jsn_group_profile">
 				<div class="jsn_group_profile_contact_icon">
 					<?php
+					if($params->get('show_social')) {
+						if(!empty($user->getValue('instagram'))) { ?>
+							<div class="jsn_group_profile_layout1_social jsn_group_profile_layout1_social_instagram" style="color: <?=$params->get('fontcolor');?>; border-color: <?=$params->get('fontcolor');?>">
+								<a href="https://instagram.com/<?=$user->getValue('instagram');?>" target="_blank">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</div>
+						<?php }
+						if(!empty($user->getValue('facebook'))) { ?>
+						<div class="jsn_group_profile_layout1_social jsn_group_profile_layout1_social_facebook" style="color: <?=$params->get('fontcolor');?>; border-color: <?=$params->get('fontcolor');?>">
+							<a href="https://facebook.com/<?=$user->getValue('facebook');?>" target="_blank">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</div>
+					<?php } }
 					if($params->get('show_mail')) {?>
 						<div class="jsn_group_profile_contact_icon_mail_desktop">
-							<a href="<?=$user->kontaktadresse;?>" target="_blank">
+							<a href="<?=$user->kontaktadresse;?>" target="_blank" style="color: <?=$params->get('fontcolor');?>; border-color: <?=$params->get('fontcolor');?>">
 								<i class="fa fa-envelope"></i>
 							</a>
 						</div>
 					<div class="jsn_group_profile_contact_icon_mail_mobile">
-						<a href="<?=$user->kontaktadresse;?>" target="_blank">
+						<a href="<?=$user->kontaktadresse;?>" target="_blank" style="color: <?=$params->get('fontcolor');?>; border-color: <?=$params->get('fontcolor');?>">
 							<i class="fa fa-envelope"></i>
 						</a>
 					</div>
 					<?php }
 						if($params->get('show_phone') && !empty($user->getValue('telefonnummer'))) {?>
-							<a href="tel:<?=$user->getValue('telefonnummer');?>">
+							<a href="tel:<?=$user->getValue('telefonnummer');?>" style="color: <?=$params->get('fontcolor');?>; border-color: <?=$params->get('fontcolor');?>">
 								<i class="fa fa-phone"></i>
 							</a>
 					<?php } ?>

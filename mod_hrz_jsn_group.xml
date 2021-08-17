@@ -3,7 +3,7 @@
     <name>JSN Group Grid</name>
     <author>Stefan Herzog</author>
     <creationDate>August 2020</creationDate>
-    <version>0.0.11</version>
+    <version>0.0.12</version>
     <description>Modul zum Anzeigen mehrerer Benutzer einer Gruppe </description>
     <files>
         <filename>mod_hrz_jsn_group.xml</filename>
@@ -17,43 +17,87 @@
     <config>
 	    <fields name="params">
 	    	<fieldset name="basic">
-			<field name="groupid" type="usergrouplist"
-				label="MOD_HRZ_JSN_GROUP_LABEL_CHOSEN_GROUP"
-			/>
-			<field name="maxElementsInRow" type="number"
-				   label="MOD_HRZ_JSN_GROUP_LABEL_MAXELEMENTSINROW"
-				   min="1"
-				   max="10"
-			/>
-			<field name="defaultContactAddress"
-				   type="text"
-				   default="/kontakt"
-				   required="true"
-				   label="MOD_HRZ_JSN_GROUP_LABEL_DEFAULTCONTACTADDRESS"
-			/>
-			<field name="parameterName"
-				   type="text"
-				   size="15"
-				   default="cfid"
-				   required="true"
-				   label="MOD_HRZ_JSN_GROUP_LABEL_PARAMETERNAME"
-			/>
-			<field name="show_mail" 
-			       type="radio" default="0"
-			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_MAIL"
-			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_MAIL"
-			       class="btn-group btn-group-yesno">
-				<option value="1">JYES</option>
-				<option value="0">JNO</option>
-			</field>
-			<field name="show_phone" 
-			       type="radio" default="0"
-			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_PHONE"
-			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_PHONE"
-			       class="btn-group btn-group-yesno">
-				<option value="1">JYES</option>
-				<option value="0">JNO</option>
-			</field>
+    			<field name="groupid" type="usergrouplist"
+    				label="MOD_HRZ_JSN_GROUP_LABEL_CHOSEN_GROUP"
+    			/>
+    			<field name="maxElementsInRow" type="number"
+    				   label="MOD_HRZ_JSN_GROUP_LABEL_MAXELEMENTSINROW"
+    				   min="1"
+    				   max="10"
+    			/>
+    			<field name="defaultContactAddress"
+    				   type="text"
+    				   default="/kontakt"
+    				   required="true"
+    				   label="MOD_HRZ_JSN_GROUP_LABEL_DEFAULTCONTACTADDRESS"
+    			/>
+    			<field name="parameterName"
+    				   type="text"
+    				   size="15"
+    				   default="cfid"
+    				   required="true"
+    				   label="MOD_HRZ_JSN_GROUP_LABEL_PARAMETERNAME"
+    			/>
+    			<field name="show_mail"
+    			       type="radio" default="0"
+    			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_MAIL"
+    			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_MAIL"
+    			       class="btn-group btn-group-yesno">
+    				<option value="1">JYES</option>
+    				<option value="0">JNO</option>
+    			</field>
+
+    			<field name="show_phone"
+    			       type="radio" default="0"
+    			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_PHONE"
+    			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_PHONE"
+    			       class="btn-group btn-group-yesno">
+    				<option value="1">JYES</option>
+    				<option value="0">JNO</option>
+    			</field>
+
+          <field name="show_social"
+    			       type="radio" default="0"
+    			       label="MOD_HRZ_JSN_GROUP_LABEL_SHOW_SOCIAL"
+    			       description="MOD_HRZ_JSN_GROUP_DESC_SHOW_SOCIAL"
+    			       class="btn-group btn-group-yesno">
+    				<option value="1">JYES</option>
+    				<option value="0">JNO</option>
+    			</field>
+
+          <field name="backgroundcolor"
+                 type="color"
+                 default="#eee"
+                 format="hex"
+          	     label="MOD_HRZ_JSN_GROUP_GRID_BACKGROUND_COLOR_LABEL"
+          	     description="MOD_HRZ_JSN_GROUP_GRID_BACKGROUND_COLOR_DESC"
+          />
+
+           <field name="fontcolor"
+                  type="color"
+                  default="#eee"
+                  format="hex"
+           	     label="MOD_HRZ_JSN_GROUP_GRID_FONT_COLOR_LABEL"
+           	     description="MOD_HRZ_JSN_GROUP_GRID_FONT_COLOR_DESC"
+            />
+
+            <field name="linkcolor"
+                   type="color"
+                   default="#eee"
+                   format="hex"
+            	     label="MOD_HRZ_JSN_GROUP_GRID_LINK_COLOR_LABEL"
+            	     description="MOD_HRZ_JSN_GROUP_GRID_LINK_COLOR_DESC"
+             />
+
+            <field name="layout"
+                   type="radio"
+                   default="1"
+                   label="MOD_HRZ_JSN_GROUP_GRID_LAYOUT_LABEL"
+                   description="MOD_HRZ_JSN_GROUP_GRID_LAYOUT_DESC"
+                   class="btn-group">
+              <option value="default">Layout 1</option>
+              <option value="default2">Layout 2</option>
+            </field>
 	    	</fieldset>
 	    </fields>
     </config>
