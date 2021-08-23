@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <updates>
     <update>
         <name>JSN Group Module</name>
@@ -17,7 +18,7 @@
         <tags>
             <tag>stable</tag>
         </tags>
-        <maintainer>Snoeren Development</maintainer>
+        <maintainer>Stefan Herzog</maintainer>
         <maintainerurl>https://github.com/alve89/</maintainerurl>
         <targetplatform name="joomla" version="[34].[0123456789]" />
     </update>
