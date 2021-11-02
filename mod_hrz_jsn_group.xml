@@ -3,7 +3,7 @@
     <name>JSN Group Grid</name>
     <author>Stefan Herzog</author>
     <creationDate>August 2020</creationDate>
-    <version>0.0.12</version>
+    <version>0.0.13</version>
     <description>Modul zum Anzeigen mehrerer Benutzer einer Gruppe </description>
     <files>
         <filename>mod_hrz_jsn_group.xml</filename>
@@ -23,7 +23,7 @@
     			<field name="maxElementsInRow" type="number"
     				   label="MOD_HRZ_JSN_GROUP_LABEL_MAXELEMENTSINROW"
     				   min="1"
-    				   max="10"
+    				   max="5"
     			/>
     			<field name="defaultContactAddress"
     				   type="text"
