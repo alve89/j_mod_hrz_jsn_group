@@ -41,11 +41,16 @@ foreach($users as $user) {
 		$tempUser->facebook = 'profile.php?id=' . $tempUser->getValue('facebook');
 	}
 
+
+
+	if(substr($tempUser->getValue('avatar'),0,1) != '/') {
+		$tempUser->avatar = '/'.$tempUser->getValue('avatar');
+	}
+
 	// Save user object back to array
 	$users[$i] = $tempUser;
 	$i++;
 }
-
 
 // Render output
 //require JModuleHelper::getLayoutPath('mod_hrz_jsn_group');

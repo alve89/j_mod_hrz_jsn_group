@@ -15,7 +15,7 @@ foreach($users as $user) {
 <div class="jsn_group_single_profile_wrapper jsn_group_col_<?=count($users)>$params->get('maxElementsInRow') ? $params->get('maxElementsInRow') : count($users);?>">
 	<div class="jsn_group_profile_wrapper" >
 		<div class="jsn_group_profile_avatar">
-			<img src="/<?=$user->getValue('avatar');?>" />
+			<img src="<?=$user->getValue('avatar');?>" />
 		</div>
 		<div class="jsn_group_profile_overlay" style="background-color: <?=$params->get('backgroundcolor');?>">
 			<div class="jsn_group_profile_name" style="color: <?=$params->get('fontcolor');?>">

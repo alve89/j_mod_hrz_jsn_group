@@ -3,7 +3,7 @@
     <name>JSN Group Grid</name>
     <author>Stefan Herzog</author>
     <creationDate>August 2020</creationDate>
-    <version>0.0.13</version>
+    <version>0.0.14</version>
     <description>Modul zum Anzeigen mehrerer Benutzer einer Gruppe </description>
     <files>
         <filename>mod_hrz_jsn_group.xml</filename>

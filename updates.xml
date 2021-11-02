@@ -5,7 +5,7 @@
         <description></description>
         <element>mod_hrz_jsn_group</element>
         <type>module</type>
-        <version>0.0.13</version>
+        <version>0.0.14</version>
         <client>0</client>
         <infourl title="JSN Group Module" />
         <downloads>
