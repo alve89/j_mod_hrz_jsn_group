@@ -20,6 +20,6 @@
         </tags>
         <maintainer>Stefan Herzog</maintainer>
         <maintainerurl>https://github.com/alve89/</maintainerurl>
-        <targetplatform name="joomla" version="3.10" />
+        <targetplatform name="joomla" version="[34].[0123456789]|10" />
     </update>
 </updates>
